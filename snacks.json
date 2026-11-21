@@ -1,0 +1,197 @@
+[
+    {
+        "id": "ajj-muscoth-alwa",
+        "name": "AJJ Muscoth Alwa",
+        "category": "Sweets",
+        "pricePer250g": 150,
+        "description": "The traditional AJJ Muscoth Halwa (famous from Mudalur, Tamil Nadu) is made with just four primary ingredients: refined flour (maida or wheat milk), thick coconut milk, sugar (or jaggery), and cashew nuts. A key feature of this Sri Lankan-inspired halwa is that it uses no added oil or ghee—its glossy texture comes entirely from the natural oils extracted from the coconut milk.",
+        "photos": [
+            "AJJ Alwa.jpeg",
+            "AJJ-Maskoth-halwa-open.webp"
+        ]
+    },
+    {
+        "id": "kadalai-mittai",
+        "name": "Kadalai Mittai (Peanut Candy)",
+        "category": "Sweets",
+        "pricePer250g": 150,
+        "description": "Kadalai mittai (also known as peanut chikki or groundnut candy) is a traditional Indian sweet. It is made with just a few simple, natural ingredients:\nPeanuts (Groundnuts): The main base of the candy.\n\nJaggery (Vellam): The unrefined sugar used to bind and sweeten the peanuts.\n\nWater: Used to melt the jaggery into a thick syrup.\n\nCardamom Powder: Adds a warm, sweet flavor (optional but common).\n\nGhee: Used in small amounts for greasing hands when rolling the candy into balls.\n\nA Pinch of Salt: Enhances the sweetness.",
+        "photos": [
+            "TP_Sweet KadalaiMittai.jpeg",
+            "Peanut Candy.png",
+            "Kadalai Mittai.jpeg"
+        ]
+    },
+    {
+        "id": "athirasam",
+        "name": "Athirasam",
+        "category": "Sweets",
+        "pricePer250g": 150,
+        "description": "Raw Rice (Pacharisi): 1 cup (preferably soaked and ground fresh at home while still slightly moist).\nJaggery (Paagu Vellam): ¾ cup to 1 cup, powdered or grated (dark palm or cane jaggery gives the best color and deep flavor).\nWater: ¼ to ½ cup (used to melt the jaggery)",
+        "photos": [
+            "TP_WB_Athirasam_FS.jpeg",
+            "AthiRasam.jpeg"
+        ]
+    },
+    {
+        "id": "jilabi",
+        "name": "Jilabi",
+        "category": "Sweets",
+        "pricePer250g": 150,
+        "description": "Jalebi needs a fermented or instant batter piped into hot oil and soaked in sugar syrup. The main components are all-purpose flour, yogurt or lemon juice for sourness, baking soda or yeast for rise, and sugar, saffron, and cardamom for the sweet syrup. You can check out a detailed walkthrough on the Indian Healthy Recipes Jalebi Guide for exact proportions",
+        "photos": [
+            "TP_Jilabi.jpeg"
+        ]
+    },
+    {
+        "id": "sillu-karupatti",
+        "name": "Sillu Karupatti",
+        "category": "Sweets",
+        "pricePer250g": 150,
+        "description": "Sillu Karupatti (a traditional South Indian palm jaggery) is a natural unrefined sweetener often enriched with spices. The exact ingredients vary by brand, but they generally consist of pure palm sap (Neera) and a blend of traditional medicinal herbs.",
+        "photos": [
+            "TP_WB_Sillu Karuppatti.jpeg"
+        ]
+    },
+    {
+        "id": "seeni-seevu",
+        "name": "Seeni Seevu",
+        "category": "Sweets",
+        "pricePer250g": 150,
+        "description": "The ultimate sweet-and-savory paradox. These crisp, fried ribbon strips are dusted or coated in a delicate sugar (seeni) glaze, creating a unique flavor profile where a hint of salt perfectly complements a gentle sweetness.",
+        "photos": [
+            "TP_WB_Seeni Sevu_FS.jpeg",
+            "TP_WB_Seeni Sevu_BS.jpeg",
+            "Sweet Seavu.png"
+        ]
+    },
+    {
+        "id": "seeval",
+        "name": "Seeval",
+        "category": "Savouries",
+        "pricePer250g": 150,
+        "description": "Seeval (or Ribbon Pakoda) is a crunchy South Indian snack. Its core ingredients are:\nFlours: Gram flour (besan) and rice flour.\n\nFats: Melted butter, ghee, or hot oil.\n\nSpices: Chili powder, asafoetida (hing), and salt.\n\nFrying Medium: Groundnut or vegetable oil",
+        "photos": [
+            "TP_WB_Seeval_FS.jpeg",
+            "TP_WB_Seeval_BS.jpeg",
+            "Seeval"
+        ]
+    },
+    {
+        "id": "sevu-sathur",
+        "name": "Sevu (Sathur)",
+        "category": "Savouries",
+        "pricePer250g": 150,
+        "description": "Sevu (or Sev) is a famous, crispy Indian snack made from deep-fried chickpea flour (besan) dough. It is shaped into thin, noodle-like strands and is widely enjoyed across South Asia. It can be eaten on its own, used as a crunchy topping for dishes like chaat, or mixed into snacks like Bombay Mix.",
+        "photos": [
+            "TP_WB_Sevu 1.png",
+            "TP_WB_Sevu B1.jpg",
+            "TP_Net_Image1.jpg",
+            "karasevu.webp"
+        ]
+    },
+    {
+        "id": "big-mixture",
+        "name": "Big Mixture",
+        "category": "Savouries",
+        "pricePer250g": 150,
+        "description": "A grand celebration of traditional South Indian flavors. This premium, crispy medley combines thick, crunchy seevu, golden fried savory elements, nuts, and aromatic curry leaves tossed in a perfectly balanced spice blend.",
+        "photos": [
+            "B Mixture.jpeg",
+            "Sp Mixture.png"
+        ]
+    },
+    {
+        "id": "small-mixture",
+        "name": "Small Mixture",
+        "category": "Savouries",
+        "pricePer250g": 150,
+        "description": "The perfect everyday tea-time companion. This finely blended savory mix features delicate, bite-sized components, crispy sev, and subtle spices that deliver a satisfying crunch without overwhelming the palate.",
+        "photos": [
+            "TP_WB_Small Mixture_FS.jpg",
+            "TP_WB_Small Mixture_BS.jpg",
+            "SmallMixture_Bowl.jpg"
+        ]
+    },
+    {
+        "id": "milagu-seevu",
+        "name": "Milagu (Black Pepper) Seevu",
+        "category": "Savouries",
+        "pricePer250g": 150,
+        "description": "A fiery, nostalgic treat crafted for spice lovers. Made with high-quality gram flour and generously infused with the bold, earthy heat of freshly crushed black pepper (milagu), these ribbon-shaped strips deliver a deep, warming kick.",
+        "photos": [
+            "TP_WB_Milagu_Sevu.jpg",
+            "TP_WB_Milagu_Sevu_BS.jpg",
+            "Milagu Seevu.jpeg"
+        ]
+    },
+    {
+        "id": "masala-kadalai",
+        "name": "Masala Kadalai",
+        "category": "Savouries",
+        "pricePer250g": 150,
+        "description": "Bold, crunchy, and irresistibly nutty. Premium whole peanuts are coated in a spiced, fiery chickpea flour batter and fried to a deep golden crisp, making every bite an explosion of garlic, chili, and nutty flavor.",
+        "photos": [
+            "Masala Kadalai.jpeg",
+            "TP_WB_Masala_Kadalai BS.jpg",
+            "MK_Bowl.jpg",
+            "Nutri_Value_MasalaKadalai.jpg"
+        ]
+    },
+    {
+        "id": "ragi-murukku",
+        "name": "Ragi Murukku",
+        "category": "Savouries",
+        "pricePer250g": 150,
+        "description": "The perfect blend of heritage nutrition and modern snacking. Crafted from wholesome finger millet (ragi) flour and traditional spices, this deep-crimson, spiral murukku offers an ultra-shattery crispness with a rich, earthy flavor.",
+        "photos": [
+            "Ragi Murukku.jpeg"
+        ]
+    },
+    {
+        "id": "oma-podi",
+        "name": "Oma Podi",
+        "category": "Savouries",
+        "pricePer250g": 150,
+        "description": "Delicately thin, golden savory strands infused with the unmistakable, soothing aroma of carom seeds (omam). Light on the stomach and melt-in-your-mouth crispy, it is as comforting as it is delicious.",
+        "photos": [
+            "TP_WB_Oma Podi_FS.jpg",
+            "TP_WB_Oma Podi_BS.jpg",
+            "Oma Podi Bowl.jpeg"
+        ]
+    },
+    {
+        "id": "poondu-murukku",
+        "name": "Poondu Murukku (Small Murukku)",
+        "category": "Savouries",
+        "pricePer250g": 150,
+        "description": "Poondu Murukku (Garlic-Small Murukku) is a crunchy, bite-sized South Indian savoury snack made primarily from a dough of rice flour and gram flour (besan or urad dal). It gets its distinct, bold taste and irresistible aroma from a generous infusion of freshly blended garlic paste and spicy red chillies. Shaped using a traditional kitchen press into mini, compact spirals or spiked logs, it is deep-fried in hot oil until it reaches a flawless golden, light, and shattered-crisp texture.",
+        "photos": [
+            "TP_WB_Poondu Murukku_FS.jpeg",
+            "TP_WB_Poondu Murukku_BS.jpeg",
+            "Poondu Murukku 1.png"
+        ]
+    },
+    {
+        "id": "banana-chips",
+        "name": "Bannana Chips",
+        "category": "Savouries",
+        "pricePer250g": 150,
+        "description": "Banana Chips are a premium, all-natural South Indian snack made from thinly sliced, unripe green bananas (typically the Nendran variety) deep-fried in pure, cold-pressed coconut oil.",
+        "photos": [
+            "TP_WB_Bannana Chips_FS.jpeg",
+            "TP_WB_Bannana Chips_BS.jpeg"
+        ]
+    },
+    {
+        "id": "potato-chips",
+        "name": "Potato Chips",
+        "category": "Savouries",
+        "pricePer250g": 150,
+        "description": "",
+        "photos": [
+            "TP_WB_Potato Chips_FS.jpeg",
+            "TP_WB_Potato Chips_BS.jpeg"
+        ]
+    }
+]
