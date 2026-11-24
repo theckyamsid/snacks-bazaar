@@ -1,156 +1,298 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fff7e8">
-  <meta name="description" content="Traditional Tamil snacks, made for your evening tea. A cheerful little Tamil snack shop for your evening tea.">
-  <title>Maalai — A little something for tea time</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Fraunces:opsz,wght,SOFT,WONK@9..144,500,30,1;9..144,600,30,1;9..144,700,30,1;9..144,800,30,1&family=Noto+Sans+Tamil:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <div class="announcement">
-    <span>MADE FOR THE 4:30 PM CRAVING</span>
-    <span class="announcement-divider">✳</span>
-    <span>Traditional favourites, packed fresh</span>
-  </div>
-
-  <header class="site-header">
-    <a class="brand" href="#" aria-label="Maalai home">
-      <span class="brand-mark">மா</span>
-      <span class="brand-name">maalai<span>.</span></span>
-    </a>
-
-    <nav class="main-nav" aria-label="Main navigation">
-      <a class="active" href="#shop">The snacks</a>
-      <a href="#story">Our little story</a>
-      <a href="#ritual">Tea-time ritual</a>
-    </nav>
-
-    <div class="header-actions">
-      <label class="search-box">
-        <span aria-hidden="true">⌕</span>
-        <input id="searchInput" type="search" placeholder="Find your favourite…" autocomplete="off">
-        <kbd>/</kbd>
-      </label>
-      <button class="bag-button" id="cartButton" aria-label="Open shopping bag">
-        <span class="bag-icon">↗</span>
-        <span>Bag</span>
-        <b id="cartCount">0</b>
-      </button>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-line"></span> THE EVENING STARTS HERE</p>
-        <h1>A little crunch.<br><em>A lot of</em> <span>nostalgia.</span></h1>
-        <p class="hero-description">The kind of snacks that make you put the kettle on. Familiar recipes, proper crunch, and a little taste of home.</p>
-        <div class="hero-actions">
-          <a class="button button-dark" href="#shop">Explore the snacks <span>↗</span></a>
-          <a class="text-link" href="#story">Get to know us <span>→</span></a>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#fff7e8" />
+        <meta
+            name="description"
+            content="Traditional Tamil snacks, made for your evening tea. A cheerful little Tamil snack shop for your evening tea."
+        />
+        <title>Maalai — A little something for tea time</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Fraunces:opsz,wght,SOFT,WONK@9..144,500,30,1;9..144,600,30,1;9..144,700,30,1;9..144,800,30,1&family=Noto+Sans+Tamil:wght@500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="announcement">
+            <span>MADE FOR THE 4:30 PM CRAVING</span>
+            <span class="announcement-divider">✳</span>
+            <span>Traditional favourites, packed fresh</span>
         </div>
-        <div class="hero-footnote">
-          <span class="footnote-star">✳</span>
-          <span>GOOD SNACKS. SLOW EVENINGS.<br><strong>THAT'S THE WHOLE IDEA.</strong></span>
-        </div>
-      </div>
 
-      <div class="hero-art" aria-label="A selection of traditional snacks">
-        <div class="hero-image hero-image-main">
-          <img src="assets/TP_All Products 2.jpeg" alt="A spread of traditional South Indian snacks" onerror="this.style.display='none'">
-        </div>
-        <div class="hero-stamp"><span>THE</span><strong>4:30</strong><span>CLUB</span><i>✳</i></div>
-        <div class="hero-note">A proper<br>tea-time<br>companion.</div>
-        <div class="hero-small-image">
-          <img src="assets/TP_WB_Milagu_Sevu_Bowl.jpg" alt="A bowl of pepper seevu" onerror="this.parentElement.style.display='none'">
-        </div>
-        <span class="art-spark spark-one">✳</span>
-        <span class="art-spark spark-two">✳</span>
-      </div>
-      <div class="hero-bottom-rule"><span>01 / A GOOD PLACE TO BEGIN</span><span>SCROLL A LITTLE ↓</span></div>
-    </section>
+        <header class="site-header">
+            <a class="brand" href="#" aria-label="Maalai home">
+                <span class="brand-mark">மா</span>
+                <span class="brand-name">maalai<span>.</span></span>
+            </a>
 
-    <section class="ticker" aria-label="Our philosophy">
-      <div class="ticker-track">
-        <span>TEA IS BETTER WITH SNACKS</span><b>✳</b><span>SMALL BATCH FEELING</span><b>✳</b><span>ROOTED IN THE SOUTH</span><b>✳</b><span>TEA IS BETTER WITH SNACKS</span><b>✳</b><span>SMALL BATCH FEELING</span><b>✳</b>
-      </div>
-    </section>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a class="active" href="#shop">The snacks</a>
+                <a href="#story">Our little story</a>
+                <a href="#ritual">Tea-time ritual</a>
+            </nav>
 
-    <section class="shop-section section-wrap" id="shop">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow"><span class="eyebrow-line"></span> STRAIGHT FROM THE TIFFIN TIN</p>
-          <h2>Something for<br><em>every kind</em> of craving.</h2>
-        </div>
-        <p class="section-aside">Sweet, savoury, spicy, or somewhere in between. Find the one that goes with your cup of tea.</p>
-      </div>
+            <div class="header-actions">
+                <label class="search-box">
+                    <span aria-hidden="true">⌕</span>
+                    <input
+                        id="searchInput"
+                        type="search"
+                        placeholder="Find your favourite…"
+                        autocomplete="off"
+                    />
+                    <kbd>/</kbd>
+                </label>
+                <button
+                    class="bag-button"
+                    id="cartButton"
+                    aria-label="Open shopping bag"
+                >
+                    <span class="bag-icon">↗</span>
+                    <span>Bag</span>
+                    <b id="cartCount">0</b>
+                </button>
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Toggle navigation"
+                >
+                    ☰
+                </button>
+            </div>
+        </header>
 
-      <div class="shop-toolbar">
-        <div class="filter-list" id="categoryFilters" aria-label="Filter snacks">
-          <button class="filter-chip active" data-category="All">Everything <span>↗</span></button>
-          <button class="filter-chip" data-category="Savouries">The savoury lot</button>
-          <button class="filter-chip" data-category="Sweets">The sweet lot</button>
-        </div>
-        <span class="result-count" id="resultCount">Loading the good stuff…</span>
-      </div>
+        <main>
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">
+                        <span class="eyebrow-line"></span> THE EVENING STARTS
+                        HERE
+                    </p>
+                    <h1>
+                        A little crunch.<br /><em>A lot of</em>
+                        <span>nostalgia.</span>
+                    </h1>
+                    <p class="hero-description">
+                        The kind of snacks that make you put the kettle on.
+                        Familiar recipes, proper crunch, and a little taste of
+                        home.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-dark" href="#shop"
+                            >Explore the snacks <span>↗</span></a
+                        >
+                        <a class="text-link" href="#story"
+                            >Get to know us <span>→</span></a
+                        >
+                    </div>
+                    <div class="hero-footnote">
+                        <span class="footnote-star">✳</span>
+                        <span
+                            >GOOD SNACKS. SLOW EVENINGS.<br /><strong
+                                >THAT'S THE WHOLE IDEA.</strong
+                            ></span
+                        >
+                    </div>
+                </div>
 
-      <div class="product-grid" id="productGrid">
-        <div class="loading-state">Getting the snack tin ready…</div>
-      </div>
-      <p class="catalogue-note">All prices shown are for 250 g packs. <span>Good things come in snack-sized packages.</span></p>
-    </section>
+                <div
+                    class="hero-art"
+                    aria-label="A selection of traditional snacks"
+                >
+                    <div class="hero-image hero-image-main">
+                        <img
+                            src="assets/TP_All Products 2.jpeg"
+                            alt="A spread of traditional South Indian snacks"
+                            onerror="this.style.display = 'none'"
+                        />
+                    </div>
+                    <div class="hero-stamp">
+                        <span>THE</span><strong>4:30</strong><span>CLUB</span
+                        ><i>✳</i>
+                    </div>
+                    <div class="hero-note">
+                        A proper<br />tea-time<br />companion.
+                    </div>
+                    <div class="hero-small-image">
+                        <img
+                            src="assets/TP_WB_Milagu_Sevu_Bowl.jpg"
+                            alt="A bowl of pepper seevu"
+                            onerror="this.parentElement.style.display = 'none'"
+                        />
+                    </div>
+                    <span class="art-spark spark-one">✳</span>
+                    <span class="art-spark spark-two">✳</span>
+                </div>
+                <div class="hero-bottom-rule">
+                    <span>01 / A GOOD PLACE TO BEGIN</span
+                    ><span>SCROLL A LITTLE ↓</span>
+                </div>
+            </section>
 
-    <section class="interlude" id="story">
-      <div class="interlude-image">
-        <img src="assets/TP_WB_Athirasam_FS.jpeg" alt="Traditional Athirasam" onerror="this.style.display='none'">
-        <span class="image-caption">A LITTLE BIT OF TRADITION, IN EVERY BITE.</span>
-      </div>
-      <div class="interlude-copy">
-        <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> NOT JUST SOMETHING TO MUNCH</p>
-        <h2>Some flavours<br>feel like <em>coming home.</em></h2>
-        <p>That first bite of murukku. The sweet pull of alwa. The unmistakable peppery kick of seevu. These aren't just snacks — they're the little rituals that make an ordinary evening feel familiar.</p>
-        <a class="button button-light" href="#shop">Find your old favourite <span>↗</span></a>
-        <span class="interlude-number">02</span>
-      </div>
-    </section>
+            <section class="ticker" aria-label="Our philosophy">
+                <div class="ticker-track">
+                    <span>TEA IS BETTER WITH SNACKS</span><b>✳</b
+                    ><span>SMALL BATCH FEELING</span><b>✳</b
+                    ><span>ROOTED IN THE SOUTH</span><b>✳</b
+                    ><span>TEA IS BETTER WITH SNACKS</span><b>✳</b
+                    ><span>SMALL BATCH FEELING</span><b>✳</b>
+                </div>
+            </section>
 
-    <section class="ritual section-wrap" id="ritual">
-      <div class="ritual-heading">
-        <p class="eyebrow"><span class="eyebrow-line"></span> A SMALL REMINDER</p>
-        <h2>Put the kettle on.<br><em>We'll handle the rest.</em></h2>
-      </div>
-      <div class="ritual-points">
-        <div><span>01</span><strong>Pick your mood</strong><p>Something sweet? Something with a kick? Your call.</p></div>
-        <div><span>02</span><strong>Make it tea time</strong><p>Find a cup, find a seat, and open the packet.</p></div>
-        <div><span>03</span><strong>Don't share. Or do.</strong><p>We're not here to judge your snack etiquette.</p></div>
-      </div>
-    </section>
-  </main>
+            <section class="shop-section section-wrap" id="shop">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">
+                            <span class="eyebrow-line"></span> STRAIGHT FROM THE
+                            TIFFIN TIN
+                        </p>
+                        <h2>
+                            Something for<br /><em>every kind</em> of craving.
+                        </h2>
+                    </div>
+                    <p class="section-aside">
+                        Sweet, savoury, spicy, or somewhere in between. Find the
+                        one that goes with your cup of tea.
+                    </p>
+                </div>
 
-  <footer class="site-footer">
-    <a class="brand brand-footer" href="#"><span class="brand-mark">மா</span><span class="brand-name">maalai<span>.</span></span></a>
-    <p>For the little pause in your day.</p>
-    <span class="footer-end">MADE FOR TEA TIME · EST. EVERY EVENING</span>
-  </footer>
+                <div class="shop-toolbar">
+                    <div
+                        class="filter-list"
+                        id="categoryFilters"
+                        aria-label="Filter snacks"
+                    >
+                        <button class="filter-chip active" data-category="All">
+                            Everything <span>↗</span>
+                        </button>
+                        <button class="filter-chip" data-category="Savouries">
+                            The savoury lot
+                        </button>
+                        <button class="filter-chip" data-category="Sweets">
+                            The sweet lot
+                        </button>
+                    </div>
+                    <span class="result-count" id="resultCount"
+                        >Loading the good stuff…</span
+                    >
+                </div>
 
-  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
-    <div class="drawer-backdrop" id="drawerBackdrop"></div>
-    <div class="drawer-panel">
-      <div class="drawer-heading"><div><p class="eyebrow">YOUR LITTLE STASH</p><h2>The snack bag<span>.</span></h2></div><button id="closeCart" aria-label="Close bag">×</button></div>
-      <div class="cart-items" id="cartItems"><p class="empty-cart">Your bag is waiting for something crunchy.</p></div>
-      <div class="cart-total"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div>
-      <p class="cart-hint">A real checkout can be connected here later.</p>
-      <button class="button button-dark checkout-button" id="checkoutButton">That's my order <span>↗</span></button>
-    </div>
-  </aside>
+                <div class="product-grid" id="productGrid">
+                    <div class="loading-state">
+                        Getting the snack tin ready…
+                    </div>
+                </div>
+                <p class="catalogue-note">
+                    All prices shown are for 250 g packs.
+                    <span>Good things come in snack-sized packages.</span>
+                </p>
+            </section>
 
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-</body>
+            <section class="interlude" id="story">
+                <div class="interlude-image">
+                    <img
+                        src="assets/TP_WB_Athirasam_FS.jpeg"
+                        alt="Traditional Athirasam"
+                        onerror="this.style.display = 'none'"
+                    />
+                    <span class="image-caption"
+                        >A LITTLE BIT OF TRADITION, IN EVERY BITE.</span
+                    >
+                </div>
+                <div class="interlude-copy">
+                    <p class="eyebrow eyebrow-light">
+                        <span class="eyebrow-line"></span> NOT JUST SOMETHING TO
+                        MUNCH
+                    </p>
+                    <h2>Some flavours<br />feel like <em>coming home.</em></h2>
+                    <p>
+                        That first bite of murukku. The sweet pull of alwa. The
+                        unmistakable peppery kick of seevu. These aren't just
+                        snacks — they're the little rituals that make an
+                        ordinary evening feel familiar.
+                    </p>
+                    <a class="button button-light" href="#shop"
+                        >Find your old favourite <span>↗</span></a
+                    >
+                    <span class="interlude-number">02</span>
+                </div>
+            </section>
+
+            <section class="ritual section-wrap" id="ritual">
+                <div class="ritual-heading">
+                    <p class="eyebrow">
+                        <span class="eyebrow-line"></span> A SMALL REMINDER
+                    </p>
+                    <h2>
+                        Put the kettle on.<br /><em>We'll handle the rest.</em>
+                    </h2>
+                </div>
+                <div class="ritual-points">
+                    <div>
+                        <span>01</span><strong>Pick your mood</strong>
+                        <p>
+                            Something sweet? Something with a kick? Your call.
+                        </p>
+                    </div>
+                    <div>
+                        <span>02</span><strong>Make it tea time</strong>
+                        <p>Find a cup, find a seat, and open the packet.</p>
+                    </div>
+                    <div>
+                        <span>03</span><strong>Don't share. Or do.</strong>
+                        <p>We're not here to judge your snack etiquette.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <a class="brand brand-footer" href="#"
+                ><span class="brand-mark">மா</span
+                ><span class="brand-name">maalai<span>.</span></span></a
+            >
+            <p>For the little pause in your day.</p>
+            <span class="footer-end"
+                >MADE FOR TEA TIME · EST. EVERY EVENING</span
+            >
+        </footer>
+
+        <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+            <div class="drawer-backdrop" id="drawerBackdrop"></div>
+            <div class="drawer-panel">
+                <div class="drawer-heading">
+                    <div>
+                        <p class="eyebrow">YOUR LITTLE STASH</p>
+                        <h2>The snack bag<span>.</span></h2>
+                    </div>
+                    <button id="closeCart" aria-label="Close bag">×</button>
+                </div>
+                <div class="cart-items" id="cartItems">
+                    <p class="empty-cart">
+                        Your bag is waiting for something crunchy.
+                    </p>
+                </div>
+                <div class="cart-total">
+                    <span>Subtotal</span><strong id="cartTotal">₹0</strong>
+                </div>
+                <p class="cart-hint">
+                    A real checkout can be connected here later.
+                </p>
+                <button
+                    class="button button-dark checkout-button"
+                    id="checkoutButton"
+                >
+                    That's my order <span>↗</span>
+                </button>
+            </div>
+        </aside>
+
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </body>
 </html>

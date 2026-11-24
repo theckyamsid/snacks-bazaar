@@ -2,18 +2,29 @@ const state = {
   products: [],
   category: "All",
   query: "",
-  cart: new Map()
+  cart: new Map(),
 };
 
 const $ = (selector) => document.querySelector(selector);
-const money = (value) => new Intl.NumberFormat("en-IN", {
-  style: "currency", currency: "INR", maximumFractionDigits: 0
-}).format(Number(value) || 0);
+const money = (value) =>
+  new Intl.NumberFormat("en-IN", {
+    style: "currency",
+    currency: "INR",
+    maximumFractionDigits: 0,
+  }).format(Number(value) || 0);
 
 function safeText(value = "") {
-  return String(value).replace(/[&<>"']/g, (char) => ({
-    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
-  })[char]);
+  return String(value).replace(
+    /[&<>"']/g,
+    (char) =>
+      ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;",
+      })[char],
+  );
 }
 
 function photoPath(filename) {
@@ -30,9 +41,11 @@ async function loadProducts() {
   const grid = $("#productGrid");
   try {
     const response = await fetch("snacks.json");
-    if (!response.ok) throw new Error(`Could not load snacks.json (${response.status})`);
+    if (!response.ok)
+      throw new Error(`Could not load snacks.json (${response.status})`);
     const data = await response.json();
-    if (!Array.isArray(data)) throw new Error("snacks.json should contain an array of products.");
+    if (!Array.isArray(data))
+      throw new Error("snacks.json should contain an array of products.");
     state.products = data;
     renderProducts();
   } catch (error) {
@@ -45,24 +58,29 @@ async function loadProducts() {
 function filteredProducts() {
   const query = state.query.trim().toLowerCase();
   return state.products.filter((product) => {
-    const categoryMatch = state.category === "All" || product.category === state.category;
-    const searchText = `${product.name || ""} ${product.category || ""} ${product.description || ""}`.toLowerCase();
+    const categoryMatch =
+      state.category === "All" || product.category === state.category;
+    const searchText =
+      `${product.name || ""} ${product.category || ""} ${product.description || ""}`.toLowerCase();
     return categoryMatch && (!query || searchText.includes(query));
   });
 }
 
 function renderProducts() {
   const products = filteredProducts();
-  $("#resultCount").textContent = `${products.length} ${products.length === 1 ? "snack" : "snacks"} to choose from`;
+  $("#resultCount").textContent =
+    `${products.length} ${products.length === 1 ? "snack" : "snacks"} to choose from`;
   if (!products.length) {
-    $("#productGrid").innerHTML = `<div class="empty-state">Nothing in the tin by that name.<br><small>Try another search or category.</small></div>`;
+    $("#productGrid").innerHTML =
+      `<div class="empty-state">Nothing in the tin by that name.<br><small>Try another search or category.</small></div>`;
     return;
   }
 
-  $("#productGrid").innerHTML = products.map((product, index) => {
-    const image = product.photos?.[0] ? photoPath(product.photos[0]) : "";
-    const price = money(product.pricePer250g);
-    return `
+  $("#productGrid").innerHTML = products
+    .map((product, index) => {
+      const image = product.photos?.[0] ? photoPath(product.photos[0]) : "";
+      const price = money(product.pricePer250g);
+      return `
       <article class="product-card">
         <div class="product-image">
           <span class="product-number">${String(index + 1).padStart(2, "0")} / ${String(products.length).padStart(2, "0")}</span>
@@ -79,7 +97,8 @@ function renderProducts() {
           </div>
         </div>
       </article>`;
-  }).join("");
+    })
+    .join("");
 }
 
 function addToCart(id) {
@@ -92,22 +111,30 @@ function addToCart(id) {
 }
 
 function updateCart() {
-  const count = [...state.cart.values()].reduce((sum, quantity) => sum + quantity, 0);
+  const count = [...state.cart.values()].reduce(
+    (sum, quantity) => sum + quantity,
+    0,
+  );
   const total = state.products.reduce((sum, product) => {
-    return sum + (Number(product.pricePer250g) || 0) * (state.cart.get(product.id) || 0);
+    return (
+      sum +
+      (Number(product.pricePer250g) || 0) * (state.cart.get(product.id) || 0)
+    );
   }, 0);
   $("#cartCount").textContent = count;
   $("#cartTotal").textContent = money(total);
 
   const entries = [...state.cart.entries()];
   if (!entries.length) {
-    $("#cartItems").innerHTML = `<p class="empty-cart">Your bag is waiting for something crunchy.</p>`;
+    $("#cartItems").innerHTML =
+      `<p class="empty-cart">Your bag is waiting for something crunchy.</p>`;
     return;
   }
-  $("#cartItems").innerHTML = entries.map(([id, quantity]) => {
-    const product = state.products.find((item) => item.id === id);
-    if (!product) return "";
-    return `<div class="cart-row">
+  $("#cartItems").innerHTML = entries
+    .map(([id, quantity]) => {
+      const product = state.products.find((item) => item.id === id);
+      if (!product) return "";
+      return `<div class="cart-row">
       <div><strong>${safeText(product.name)}</strong><small>${money(product.pricePer250g)} / 250 g · ${money(product.pricePer250g * quantity)}</small></div>
       <div class="quantity-controls">
         <button data-quantity="${safeText(id)}" data-change="-1" aria-label="Remove one">−</button>
@@ -115,7 +142,8 @@ function updateCart() {
         <button data-quantity="${safeText(id)}" data-change="1" aria-label="Add one">+</button>
       </div>
     </div>`;
-  }).join("");
+    })
+    .join("");
 }
 
 function changeQuantity(id, change) {
@@ -149,7 +177,9 @@ $("#categoryFilters").addEventListener("click", (event) => {
   const button = event.target.closest("[data-category]");
   if (!button) return;
   state.category = button.dataset.category;
-  document.querySelectorAll(".filter-chip").forEach((chip) => chip.classList.toggle("active", chip === button));
+  document
+    .querySelectorAll(".filter-chip")
+    .forEach((chip) => chip.classList.toggle("active", chip === button));
   renderProducts();
 });
 
@@ -160,7 +190,8 @@ $("#productGrid").addEventListener("click", (event) => {
 
 $("#cartItems").addEventListener("click", (event) => {
   const button = event.target.closest("[data-quantity]");
-  if (button) changeQuantity(button.dataset.quantity, Number(button.dataset.change));
+  if (button)
+    changeQuantity(button.dataset.quantity, Number(button.dataset.change));
 });
 
 $("#searchInput").addEventListener("input", (event) => {
@@ -172,13 +203,22 @@ $("#cartButton").addEventListener("click", openCart);
 $("#closeCart").addEventListener("click", closeCart);
 $("#drawerBackdrop").addEventListener("click", closeCart);
 $("#checkoutButton").addEventListener("click", () => {
-  showToast(state.cart.size ? "Checkout can be connected to your payment flow." : "Your bag is empty for now.");
+  showToast(
+    state.cart.size
+      ? "Checkout can be connected to your payment flow."
+      : "Your bag is empty for now.",
+  );
 });
-$("#menuToggle").addEventListener("click", () => $(".main-nav").classList.toggle("open"));
+$("#menuToggle").addEventListener("click", () =>
+  $(".main-nav").classList.toggle("open"),
+);
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeCart();
-  if (event.key === "/" && !["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) {
+  if (
+    event.key === "/" &&
+    !["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)
+  ) {
     event.preventDefault();
     $("#searchInput").focus();
   }
